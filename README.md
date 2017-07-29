@@ -1,7 +1,7 @@
 # midi-hsl
-HSL colour changer knob for midi controller
+HSL colour changer knob for midi controller - You need a midi controller to see this working
 
-Inspired by Natalya Shelburne's HSL clock http://artist-developer.com/demos.html from her colour theory for developer demos.
+Starting point was Natalya Shelburne's HSL clock http://artist-developer.com/demos.html from her colour theory for developer demos. Code can be found here: https://github.com/tallys
 
 I've added the p5.midi javascript library https://github.com/therewasaguy/p5.midi despite not using p5.js yet.
 

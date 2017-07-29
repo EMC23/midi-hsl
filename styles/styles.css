@@ -24,26 +24,33 @@ body {
   align-items: center;
 }
 
-/* line 27, styles.scss */
+/* line 28, styles.scss */
 .demo-item {
   width: 90vw;
   min-height: 90vh;
 }
 
-/* line 34, styles.scss */
+/* line 35, styles.scss */
 .clock {
   --second-degrees: 0;
+  display: inline-block;
   width: 25rem;
   height: 25rem;
   border: 20px solid hsla(var(--second-degrees), 90%, 45%, 1);
   border-radius: 50%;
-  margin: 50px auto;
+  margin: 50px 3rem;
   position: relative;
   padding: 2rem;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px var(--black), 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* line 51, styles.scss */
+/* line 53, styles.scss */
+.clock.solid {
+  background-color: hsla(var(--second-degrees), 90%, 45%, 1);
+  box-shadow: none;
+}
+
+/* line 58, styles.scss */
 .clock-face {
   position: relative;
   width: 100%;
@@ -52,7 +59,7 @@ body {
   /* account for the height of the clock hands */
 }
 
-/* line 58, styles.scss */
+/* line 65, styles.scss */
 .hand {
   width: 50%;
   height: 6px;
@@ -310,43 +317,43 @@ body {
     fill: #6e6e6e;
   }
 }
-/* line 337, styles.scss */
+/* line 344, styles.scss */
 .💎 .gem0 {
   fill: #d4c3bf;
   animation: adjust0 5s linear infinite alternate;
 }
-/* line 341, styles.scss */
+/* line 348, styles.scss */
 .💎 .gem1 {
   fill: #bfa6a1;
   animation: adjust1 5s linear infinite alternate;
 }
-/* line 345, styles.scss */
+/* line 352, styles.scss */
 .💎 .gem2 {
   fill: #995142;
   animation: adjust2 5s linear infinite alternate;
 }
-/* line 349, styles.scss */
+/* line 356, styles.scss */
 .💎 .gem3 {
   fill: #b78980;
   animation: adjust3 5s linear infinite alternate;
 }
-/* line 353, styles.scss */
+/* line 360, styles.scss */
 .💎 .gem4 {
   fill: black;
   animation: adjust4 5s linear infinite alternate;
 }
-/* line 357, styles.scss */
+/* line 364, styles.scss */
 .💎 .gem5 {
   fill: #be8579;
   animation: adjust5 5s linear infinite alternate;
 }
-/* line 361, styles.scss */
+/* line 368, styles.scss */
 .💎 .gem6 {
   fill: #975345;
   animation: adjust6 5s linear infinite alternate;
 }
 
-/* line 368, styles.scss */
+/* line 375, styles.scss */
 .💎 {
   display: block;
   margin: auto;
@@ -356,7 +363,7 @@ body {
   stroke: none;
 }
 
-/* line 382, styles.scss */
+/* line 389, styles.scss */
 .value-scale div, .color-value-scale div, .saturation-value-scale div {
   height: 77px;
   width: calc(8vw - 11px);
@@ -365,178 +372,178 @@ body {
   border: 1px solid #efefef;
 }
 
-/* line 390, styles.scss */
+/* line 397, styles.scss */
 .value-scale .value1 {
   background-color: black;
 }
 
-/* line 393, styles.scss */
+/* line 400, styles.scss */
 .value-scale .value2 {
   background-color: #1a1a1a;
 }
 
-/* line 396, styles.scss */
+/* line 403, styles.scss */
 .value-scale .value3 {
   background-color: #333333;
 }
 
-/* line 399, styles.scss */
+/* line 406, styles.scss */
 .value-scale .value4 {
   background-color: #4d4d4d;
 }
 
-/* line 402, styles.scss */
+/* line 409, styles.scss */
 .value-scale .value5 {
   background-color: #666666;
 }
 
-/* line 405, styles.scss */
+/* line 412, styles.scss */
 .value-scale .value6 {
   background-color: gray;
 }
 
-/* line 408, styles.scss */
+/* line 415, styles.scss */
 .value-scale .value7 {
   background-color: #999999;
 }
 
-/* line 411, styles.scss */
+/* line 418, styles.scss */
 .value-scale .value8 {
   background-color: #b3b3b3;
 }
 
-/* line 414, styles.scss */
+/* line 421, styles.scss */
 .value-scale .value9 {
   background-color: #cccccc;
 }
 
-/* line 417, styles.scss */
+/* line 424, styles.scss */
 .value-scale .value10 {
   background-color: #e6e6e6;
 }
 
-/* line 420, styles.scss */
+/* line 427, styles.scss */
 .value-scale .value11 {
   background-color: white;
 }
 
-/* line 425, styles.scss */
+/* line 432, styles.scss */
 .saturation-value-scale .value1 {
   background-color: black;
 }
 
-/* line 428, styles.scss */
+/* line 435, styles.scss */
 .saturation-value-scale .value2 {
   background-color: #330000;
 }
 
-/* line 431, styles.scss */
+/* line 438, styles.scss */
 .saturation-value-scale .value3 {
   background-color: #660000;
 }
 
-/* line 434, styles.scss */
+/* line 441, styles.scss */
 .saturation-value-scale .value4 {
   background-color: #990000;
 }
 
-/* line 437, styles.scss */
+/* line 444, styles.scss */
 .saturation-value-scale .value5 {
   background-color: #cc0000;
 }
 
-/* line 440, styles.scss */
+/* line 447, styles.scss */
 .saturation-value-scale .value6 {
   background-color: red;
 }
 
-/* line 443, styles.scss */
+/* line 450, styles.scss */
 .saturation-value-scale .value7 {
   background-color: #ff3333;
 }
 
-/* line 446, styles.scss */
+/* line 453, styles.scss */
 .saturation-value-scale .value8 {
   background-color: #ff6666;
 }
 
-/* line 449, styles.scss */
+/* line 456, styles.scss */
 .saturation-value-scale .value9 {
   background-color: #ff9999;
 }
 
-/* line 452, styles.scss */
+/* line 459, styles.scss */
 .saturation-value-scale .value10 {
   background-color: #ffcccc;
 }
 
-/* line 455, styles.scss */
+/* line 462, styles.scss */
 .saturation-value-scale .value11 {
   background-color: white;
 }
 
-/* line 460, styles.scss */
+/* line 467, styles.scss */
 .color-value-scale .value1 {
   background-color: black;
 }
 
-/* line 463, styles.scss */
+/* line 470, styles.scss */
 .color-value-scale .value2 {
   background-color: #331a00;
 }
 
-/* line 466, styles.scss */
+/* line 473, styles.scss */
 .color-value-scale .value3 {
   background-color: #666600;
 }
 
-/* line 469, styles.scss */
+/* line 476, styles.scss */
 .color-value-scale .value4 {
   background-color: #4d9900;
 }
 
-/* line 472, styles.scss */
+/* line 479, styles.scss */
 .color-value-scale .value5 {
   background-color: #00cc00;
 }
 
-/* line 475, styles.scss */
+/* line 482, styles.scss */
 .color-value-scale .value6 {
   background-color: #00ffaa;
 }
 
-/* line 478, styles.scss */
+/* line 485, styles.scss */
 .color-value-scale .value7 {
   background-color: #33ddff;
 }
 
-/* line 481, styles.scss */
+/* line 488, styles.scss */
 .color-value-scale .value8 {
   background-color: #6699ff;
 }
 
-/* line 484, styles.scss */
+/* line 491, styles.scss */
 .color-value-scale .value9 {
   background-color: #bb99ff;
 }
 
-/* line 487, styles.scss */
+/* line 494, styles.scss */
 .color-value-scale .value10 {
   background-color: #f7ccff;
 }
 
-/* line 490, styles.scss */
+/* line 497, styles.scss */
 .color-value-scale .value11 {
   background-color: white;
 }
 
-/* line 494, styles.scss */
+/* line 501, styles.scss */
 .🍰 {
   font-size: 16px;
   color: #efefef;
 }
 
-/* line 499, styles.scss */
+/* line 506, styles.scss */
 .demo-text-block {
   text-align: left;
   margin: 10px auto 45px auto;

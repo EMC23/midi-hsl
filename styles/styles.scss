@@ -22,6 +22,7 @@ body {
 	align-items: center;
 }
 
+
 // navigation
 
 .demo-item {
@@ -33,12 +34,13 @@ body {
 
 .clock {
 	--second-degrees: 0;
+	display: inline-block;
 	width: 25rem;
 	height: 25rem;
 	// we must use a string literal because sass + custom props is anger
 	border: 20px solid #{"hsla(var(--second-degrees), 90%, 45%, 1)"};
 	border-radius: 50%;
-	margin: 50px auto;
+	margin: 50px 3rem;
 	position: relative;
 	padding: 2rem;
 	box-shadow:
@@ -46,6 +48,11 @@ body {
 	inset 0 0 0 3px #EFEFEF,
 	inset 0 0 10px var(--black),
 	0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock.solid {
+	background-color: #{"hsla(var(--second-degrees), 90%, 45%, 1)"};
+	box-shadow: none;
 }
 
 .clock-face {

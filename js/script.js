@@ -20,6 +20,7 @@ p5.midi.onInput = function(event) {
 
 	function renderClock(date) {
 		const clock = document.querySelector(`.js--clock .clock`)
+		const clockSolid = document.querySelector(`.js--clock .clock.solid`)
 		//const [hour, mins, seconds] = [date.getHours(), date.getMinutes(), date.getSeconds()]
 		const [hour, mins, seconds] = [date.getHours(), date.getMinutes(), value]
 
@@ -27,12 +28,14 @@ p5.midi.onInput = function(event) {
 		const minsDegrees = ((mins / MINUTES_ON_FACE) * DEGS_IN_CIRCLE) + ((seconds / SECONDS_ON_FACE)*DEGS_PER_MINUTE) + 90
 		const hourDegrees = ((hour / HOURS_ON_FACE) * DEGS_IN_CIRCLE) + ((mins / MINUTES_ON_FACE)*DEGS_PER_HOUR) + 90
 
-		console.log('secondsDegrees: ' + secondsDegrees);
+		//console.log('secondsDegrees: ' + secondsDegrees);
 
 		clock.querySelector(`.js--second-hand`).style.transform = `rotate(${secondsDegrees}deg)`
+		clockSolid.querySelector(`.js--second-hand`).style.transform = `rotate(${secondsDegrees}deg)`
 		//clock.querySelector(`.js--min-hand`).style.transform = `rotate(${minsDegrees}deg)`
 		//clock.querySelector(`.js--hour-hand`).style.transform = `rotate(${hourDegrees}deg)`
 		clock.style.setProperty(`--second-degrees`, secondsDegrees - 90)
+		clockSolid.style.setProperty(`--second-degrees`, secondsDegrees - 90)
 
 	}
 
