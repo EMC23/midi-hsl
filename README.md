@@ -3,7 +3,7 @@ HSL colour changer knob for midi controller - You need a midi controller to see 
 
 ![midi hsl screenshot](images/midi-hsl.png)
 
-![midi hsl video](http://emc23.com/images/midi-hsl.ogv)
+![midi hsl video](http://emc23.com/images/midi-hsl.gif)
 
 Starting point was Natalya Shelburne's HSL clock http://artist-developer.com/demos.html from her colour theory for developer demos. Code can be found here: https://github.com/tallys
 
